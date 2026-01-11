@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror -g
+
+TARGET = seashell
+SRC = src/main.c
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
+
+clean:
+	rm -f $(TARGET)
